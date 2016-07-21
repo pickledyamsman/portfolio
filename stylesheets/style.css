@@ -1,0 +1,157 @@
+/* Imports */
+
+@import 'https://fonts.googleapis.com/css?family=Cabin:400,600';
+
+/* Social Media Buttons */
+
+a.fbook {
+  background: url(../images/facebook.svg);
+
+}
+
+a.git {
+  background: url(../images/github.svg);
+} 
+
+a.linkedin {
+  background: url(../images/linkedin.svg);
+}
+
+a.fbook, a.git, a.linkedin {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 0.5em;
+}
+
+/* Body */
+
+#about, #contact {
+  background-color: #F9C1C0;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+  font-family: 'Cabin', sans-serif;
+}
+
+footer {
+  color: #000;
+  background-color: #265D64;
+  font-family: 'Cabin', sans-serif;
+}
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+
+.item span {
+  font-style: normal;
+}
+
+.jumbotron {
+  background-image: url("../images/temple-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 200px 25px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.logo {
+ color: #f4511e;
+ font-size: 200px; 
+}
+
+.logo-small {
+  color: #f4511e;
+  font-size: 50px;
+}
+
+.logo-small img {
+  width: auto;
+  height: auto;
+  max-height: 75px;
+  max-width: 75px;
+}
+
+#portfolio {
+  background-color: #626DBF;
+}
+
+#skills {
+  background-color: #265D64;
+  color: #000;
+}
+
+/* Navbar */
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #265D64;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: .42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: 'Cabin', sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #000 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #000 !important;
+  background-color: #2B399A !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000 !important;
+}
+
+/* Thumbnails */
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+  background-color: #F9C1C0;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+/* Media requests */
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+
+}
