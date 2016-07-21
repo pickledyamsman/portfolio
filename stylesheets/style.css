@@ -75,6 +75,7 @@ footer .glyphicon {
   color: #ffffff;
   padding: 200px 25px;
   font-family: 'Cabin', sans-serif;
+  margin-bottom: 0px !important;
 }
 
 .logo {
@@ -96,6 +97,7 @@ footer .glyphicon {
 
 #portfolio {
   background-color: #626DBF;
+  color: #000;
 }
 
 #skills {
@@ -127,8 +129,8 @@ footer .glyphicon {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #000 !important;
+  border-color: transparent;
+  color: #000 !important;
 }
 
 /* Thumbnails */
