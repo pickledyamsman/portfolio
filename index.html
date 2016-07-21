@@ -8,16 +8,6 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-81153577-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-targer=".navbar" data-offset="60">
@@ -33,13 +23,13 @@
         <a class="navbar-brand" href="#">Matthew Cianciolo</a>
       </div>
       <div class="nav navbar-nav">
-        <a class="git" href="https://github.com/pickledyamsman" title="Github">Github</a><br>
+        <a class="git col-xs-3" href="https://github.com/pickledyamsman" title="Github">Github</a><br>
       </div>
       <div class="nav navbar-nav">
-        <a class="linkedin" href="https://www.linkedin.com/in/matthewcianciolo" title="LinkedIn">LinkedIn</a>
+        <a class="linkedin col-xs-3" href="https://www.linkedin.com/in/matthewcianciolo" title="LinkedIn">LinkedIn</a>
       </div>
       <div class="nav navbar-nav">
-        <a class="fbook" href="https://www.facebook.com/profile.php?id=5138003" title="Facebook">Facebook</a>
+        <a class="fbook col-xs-3" href="https://www.facebook.com/profile.php?id=5138003" title="Facebook">Facebook</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -119,22 +109,22 @@
     <div class="row text-center">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="images/birth-year-album.png" alt="Birth Year Album">
-          <p><strong>Birth Year Album</strong></p>
+          <a href="https://github.com/pickledyamsman/birth_year_album"><img src="images/birth-year-album.png" alt="Birth Year Album"></a>
+          <p><strong><a href="https://github.com/pickledyamsman/birth_year_album">Birth Year Album</a></strong></p>
           <p>A Ruby gem that accepts a birth year through a custome CLI and scrapes Wikipedia using Nokogiri to find the highest selling album for that year.</p>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="images/game-organizer.png" alt="Game Organizer">
-          <p><strong>Game Organizer</strong></p>
+          <a href="https://github.com/pickledyamsman/game_organizer"><img src="images/game-organizer.png" alt="Game Organizer"></a>
+          <p><strong><a href="https://github.com/pickledyamsman/game_organizer">Game Organizer</a></strong></p>
           <p>A Ruby app using Sinatra that lets users organize their board game collection.</p>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="images/club-posts.png" alt="Club Posts">
-          <p><strong>Club Posts</strong></p>
+          <a href="https://github.com/pickledyamsman/club_posts/tree/rails_javascript_assessment"><img src="images/club-posts.png" alt="Club Posts"></a>
+          <p><strong><a href="https://github.com/pickledyamsman/club_posts/tree/rails_javascript_assessment">Club Posts</a></strong></p>
           <p>A simple forum app using Rails, JavaScript, and jQuery that lets students communicate with other club members. It uses OmniAuth and Devise for authentication.</p>
         </div>
       </div>
@@ -142,8 +132,8 @@
     <div class="row text-center">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="images/whats-for-dinner.png" alt="What's for Dinner?">
-          <p><strong>What's For Dinner?</strong></p>
+          <a href="https://github.com/pickledyamsman/whats-for-dinner"><img src="images/whats-for-dinner.png" alt="What's for Dinner?"></a>
+          <p><strong><a href="https://github.com/pickledyamsman/whats-for-dinner">What's For Dinner?</a></strong></p>
           <p>A app to help groups choose where they should eat. Uses a Rails backend and AngularJS frontend. Users can create events and restaurants then vote for their favorites.</p>
         </div>
       </div>
@@ -172,6 +162,16 @@
         <p><span class="glyphicon glyphicon-map-marker"></span> Athens, GA</p>
         <p><span class="glyphicon glyphicon-phone"></span> <a href="tel:504-485-1985">504-485-1985</a></p>
         <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:matthewcianciolo@gmail.com">matthewcianciolo@gmail.com</a></p> 
+        <button class="btn">
+          <a href="https://github.com/pickledyamsman" title="Github">Github</a>
+        </button>
+        <button class="btn">
+          <a href="https://www.linkedin.com/in/matthewcianciolo" title="LinkedIn">LinkedIn</a>
+        </button>
+        <button class="btn">
+          <a href="https://www.facebook.com/profile.php?id=5138003" title="Facebook">Facebook</a>
+        </button>
+        <br><br>
       </div>
       <div class="col-sm-5">
         <!-- Set height and width with CSS -->
@@ -240,7 +240,16 @@
       });
     })
   </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-81153577-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 
 </body>
 </html>

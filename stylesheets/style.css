@@ -20,7 +20,7 @@ a.linkedin {
 a.fbook, a.git, a.linkedin {
   background-size: contain;
   background-repeat: no-repeat;
-  display: block;
+  display: inline;
   width: 40px;
   height: 40px;
   text-indent: 100%;
@@ -37,6 +37,15 @@ a.fbook, a.git, a.linkedin {
 
 .bg-grey {
   background-color: #f6f6f6;
+}
+
+button {
+  margin: 5px;
+  background-color: #265D64;
+}
+
+button a {
+  color: #000 !important;
 }
 
 .container-fluid {
@@ -155,5 +164,5 @@ footer .glyphicon {
     text-align: center;
     margin: 25px 0;
   }
-
 }
+
