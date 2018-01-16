@@ -20,7 +20,6 @@ a.linkedin {
 a.fbook, a.git, a.linkedin {
   background-size: contain;
   background-repeat: no-repeat;
-  display: block;
   width: 40px;
   height: 40px;
   text-indent: 100%;
@@ -47,6 +46,15 @@ body {
 
 .bg-grey {
   background-color: #f6f6f6;
+}
+
+button {
+  margin: 5px;
+  background-color: #265D64;
+}
+
+a button {
+  color: #000 !important;
 }
 
 .container-fluid {
@@ -100,8 +108,6 @@ footer .glyphicon {
   max-height: 75px;
   max-width: 75px;
 }
-
-
 
 #skills, #contact {
   background-color: #fff;
@@ -177,6 +183,7 @@ footer .glyphicon {
     text-align: center;
     margin: 25px 0;
   }
+}
 
   .social-links {
     text-align: -webkit-center;
