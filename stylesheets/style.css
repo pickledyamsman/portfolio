@@ -1,6 +1,6 @@
 /* Imports */
 
-@import 'https://fonts.googleapis.com/css?family=Cabin:400,600';
+@import 'https://fonts.googleapis.com/css?family=Lato:400,600';
 
 /* Social Media Buttons */
 
@@ -31,8 +31,18 @@ a.fbook, a.git, a.linkedin {
 
 /* Body */
 
-#about, #contact {
-  background-color: #F9C1C0;
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#about, #edu-portfolio {
+  background-color: #dcf3ed;
+  color: #5bc1a5;
+}
+
+#portfolio, footer, .jumbotron {
+  color: #DF744A;
+  background-color: #FEDCD2;
 }
 
 .bg-grey {
@@ -41,13 +51,11 @@ a.fbook, a.git, a.linkedin {
 
 .container-fluid {
   padding: 60px 50px;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 footer {
-  color: #000;
-  background-color: #265D64;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 footer .glyphicon {
@@ -69,21 +77,20 @@ footer .glyphicon {
 }
 
 .jumbotron {
-  background-image: url("../images/temple-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: #ffffff;
   padding: 200px 25px;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0;
 }
 
 .logo {
- color: #f4511e;
+ color: #000;
  font-size: 200px; 
 }
 
 .logo-small {
-  color: #f4511e;
+  color: #000;
   font-size: 50px;
 }
 
@@ -94,12 +101,15 @@ footer .glyphicon {
   max-width: 75px;
 }
 
-#portfolio {
-  background-color: #626DBF;
+
+
+#skills, #contact {
+  background-color: #fff;
+  color: #000;
 }
 
-#skills {
-  background-color: #265D64;
+.contact-link {
+  text-decoration: none;
   color: #000;
 }
 
@@ -107,14 +117,14 @@ footer .glyphicon {
 
 .navbar {
   margin-bottom: 0;
-  background-color: #265D64;
+  background-color: white;
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
   line-height: .42857143 !important;
   letter-spacing: 4px;
   border-radius: 0;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -122,27 +132,41 @@ footer .glyphicon {
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #000 !important;
-  background-color: #2B399A !important;
+  color: #DF744A !important;
+  background-color: #fff !important;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #000 !important;
+  border-color: transparent;
+  color: #000 !important;
 }
 
 /* Thumbnails */
 
-.thumbnail {
+.edu-thumbnail {
   padding: 0 0 15px 0;
   border: none;
   border-radius: 0;
-  background-color: #F9C1C0;
+  background-color: #dcf3ed;
 }
 
-.thumbnail img {
+.edu-thumbnail img {
   width: 100%;
   height: 100%;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.port-thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+  color: #DF744A;
+}
+
+.port-thumbnail img {
+  width: 100%;
+  height: 277px;
   margin-bottom: 10px;
 }
 
@@ -152,6 +176,11 @@ footer .glyphicon {
   .col-sm-4 {
     text-align: center;
     margin: 25px 0;
+  }
+
+  .social-links {
+    text-align: -webkit-center;
+    display: inline-flex;
   }
 
 }
