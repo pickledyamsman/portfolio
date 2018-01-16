@@ -7,38 +7,43 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-81153577-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-targer=".navbar" data-offset="60">
 
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
-        </button>
-        <a class="navbar-brand" href="#">Matthew Cianciolo</a>
-      </div>
-      <div class="nav navbar-nav">
-        <a class="git col-xs-3" href="https://github.com/pickledyamsman" title="Github">Github</a><br>
-      </div>
-      <div class="nav navbar-nav">
-        <a class="linkedin col-xs-3" href="https://www.linkedin.com/in/matthewcianciolo" title="LinkedIn">LinkedIn</a>
-      </div>
-      <div class="nav navbar-nav">
-        <a class="fbook col-xs-3" href="https://www.facebook.com/profile.php?id=5138003" title="Facebook">Facebook</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Matthew Cianciolo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+            <div class="nav navbar-nav social-links">
+      <li><a class="git" href="https://github.com/pickledyamsman" target="_blank" title="Github">Github</a><br></li>
+      <li><a class="linkedin" href="https://www.linkedin.com/in/matthewcianciolo" target="_blank" title="LinkedIn">LinkedIn</a></li>
+      <li><a class="fbook" href="https://www.facebook.com/profile.php?id=5138003" target="_blank" title="Facebook">Facebook</a></li>
+    </div>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#edu-portfolio">EDUCATION</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
     </div>
   </nav>
 
@@ -47,129 +52,158 @@
     <p>A full stack developer out of Athens, GA</p>
   </div>
 
-  <div id="about" class="container-fluid">
-    <div class="row">
-      <div class="col-sm-8">
-        <h2>About Me</h2>
-        <h4>My name is Matthew Cianciolo and I am a web developer that recently moved back to America from South Korea.</h4>
-        <p>I lived in South Korea for five years where I taught English, managed classrooms, and created content for students. In this position I was able to gauge the problems that students had so that I could better tailor the curriculum to their needs.</p>
-        <p>I recently completed the development bootcamp through Flatiron School where I learned: Ruby, Rails, JavaScript, AngularJS, jQuery, and full stack development among some other languages. With the skills I gained through Flatiron School, I have been able to create applications that have helped me in my everyday life.</p>
-        <p>My wife will be starting enrollment in the UGA counseling graduate program in the Fall. We have been exploring the city and trying out all of the amazing food that Athens has to offer!</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="logo"><img class="img-circle" src="images/matthew-cianciolo.jpg" alt="Matthew Cianciolo"></span>
-      </div>
+  <div id="about" class="container-fluid text-center">
+    <div class="container">
+      <h2>I am a full stack web developer specializing in Rails and ReactJS.</h2>
+      <br>
+      <div class="row">
+        <div class="col-sm-7 text-justify">
+          <p>I am a full stack developer currently living in Athens, Georgia. I have been working with a small startup for over a year now using a stack that is mostly 
+          Rails and React.</p>
+          <p>I am a graduate of the Flatiron bootcamp based in New York. At the bootcamp, I mainly learned Ruby, Rails, JavaScript, AngularJS, and jQuery.</p>
+          <p>Before my decision to become a full stack developer, I taught in South Korea for five years which allowed me the opportunity to travel all over the world!</p>
+        </div>
+        <div class="col-sm-5">
+          <img class="img-circle" src="images/matthew-cianciolo.jpg" alt="Matthew Cianciolo">
+        </div>
+    </div>
     </div>
   </div>
 
   <div id="skills" class="container-fluid text-center">
-    <h2>Skills</h2>
-    <h4>Here's what I know!</h4>
-    <br>
-    <div class="row">
-      <div class="col-sm-4">
-        <span class="logo-small"><img src="images/ruby_on_rails.svg"></span>
-        <h4>Ruby on Rails</h4>
-        <p>Ruby is the language I am most familiar with. I am most familiar with the Rails framework but I have experience with a few others as well. I have used it for OOP using a MVC framework.</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="logo-small"><img src="images/javascript.svg"></span>
-        <h4>JavaScript</h4>
-        <p>I have used Javascript to enhance my Rails apps and I am currently learning more JavaScript for future apps.</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="ogo-small"><img src="images/html5.svg"></span>
-        <h4>HTML</h4>
-        <p>I have used HTML for just about every app I have worked on.</p>
-      </div>
+    <div class="container">
+      <h2>Skills</h2>
+      <h4>Here's what I know!</h4>
+      <br>
+      <div class="row">
+        <div class="col-sm-2">
+          <span class="logo-small"><img src="images/ruby_on_rails.svg"></span>
+          <h4>Ruby on Rails</h4>
+        </div>
+        <div class="col-sm-2">
+          <span class="logo-small"><img src="images/react-js.png"></span>
+          <h4>ReactJS</h4>
+        </div>
+        <div class="col-sm-2">
+          <span class="logo-small"><img src="images/javascript.svg"></span>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="col-sm-2">
+          <span class="logo-small"><img src="images/postgreesql.png"></span>
+          <h4>PostgreSQL</h4>
+        </div>
+        <div class="col-sm-2">
+          <span class="logo-small"><img src="images/jquery.png"></span>
+          <h4>jQuery</h4>
+        </div>
+        <div class="col-sm-2">
+          <span class="logo-small"><img src="images/angularjs.png"></span>
+          <h4>Angular 1.5</h4>
+        </div>
       </div>
       <br><br>
-    <div class="row">
-      <div class="col-sm-4">
-        <span class="logo-small"><img src="images/css.png"></span>
-        <h4>CSS</h4>
-        <p>I have experience with both Bootstrap and custom CSS in the apps I have created.</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="logo-small"><img src="images/jquery.png"></span>
-        <h4>jQuery</h4>
-        <p>I have used custom jQuery on top of Rails and AngularJS frontends.</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="logo-small"><img src="images/angularjs.png"></span>
-        <h4>AngularJS</h4>
-        <p>My latest app used AngularJS as a frontend for a Rails backend. I am still improving my skills with Angular..</p>
+      <div class="row">
+        <div class="col-sm-2">
+          <span class="logo-small"><img src="images/html5.svg"></span>
+          <h4>HTML</h4>
+        </div>
+        <div class="col-sm-2">
+          <span class="logo-small"><img src="images/css.png"></span>
+          <h4>CSS / SASS</h4>
+        </div>
       </div>
     </div>
   </div>
 
   <div id="portfolio" class="container-fluid text-center bg-grey">
+    <div class="container">
     <h2>Portfolio</h2>
-    <h4>Here are some of the apps I have built</h4>
+    <h4>Websites I have worked on professionally</h4>
     <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="https://github.com/pickledyamsman/birth_year_album"><img src="images/birth-year-album.png" alt="Birth Year Album"></a>
-          <p><strong><a href="https://github.com/pickledyamsman/birth_year_album">Birth Year Album</a></strong></p>
-          <p>A Ruby gem that accepts a birth year through a custome CLI and scrapes Wikipedia using Nokogiri to find the highest selling album for that year.</p>
+      <a href="https://www.blastapp.io/" target="_blank">
+        <div class="col-sm-4">
+          <div class="port-thumbnail">
+            <img src="images/blastapp.png" alt="Blast App">
+            <p><strong>Blast App</strong></p>
+            <p>Employed from 03/17 - 11/17 as a Junior Developer. Developed and executed features on all parts of the site using Rails and ReactJS.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="https://github.com/pickledyamsman/game_organizer"><img src="images/game-organizer.png" alt="Game Organizer"></a>
-          <p><strong><a href="https://github.com/pickledyamsman/game_organizer">Game Organizer</a></strong></p>
-          <p>A Ruby app using Sinatra that lets users organize their board game collection.</p>
+      </a>
+      <a href="https://vestigo.co/" target="_blank">
+        <div class="col-sm-4">
+          <div class="port-thumbnail">
+            <img src="images/vestigo.png" alt="Vestigo">
+            <p><strong>Vestigo</strong></p>
+            <p>Implemented new designs for blog page. Improved load times and data collection from WordPress blog.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="https://github.com/pickledyamsman/club_posts/tree/rails_javascript_assessment"><img src="images/club-posts.png" alt="Club Posts"></a>
-          <p><strong><a href="https://github.com/pickledyamsman/club_posts/tree/rails_javascript_assessment">Club Posts</a></strong></p>
-          <p>A simple forum app using Rails, JavaScript, and jQuery that lets students communicate with other club members. It uses OmniAuth and Devise for authentication.</p>
+      </a>
+      <a href="https://borrowingmagnolia.com/" target="_blank">
+        <div class="col-sm-4">
+          <div class="port-thumbnail">
+            <img src="images/borrowingmagnolia.png" alt="Borrowing Magnolia">
+            <p><strong>Borrowing Magnolia</strong></p>
+            <p>Implemented improved search and pagination and improved general test coverage.</p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="https://github.com/pickledyamsman/whats-for-dinner"><img src="images/whats-for-dinner.png" alt="What's for Dinner?"></a>
-          <p><strong><a href="https://github.com/pickledyamsman/whats-for-dinner">What's For Dinner?</a></strong></p>
-          <p>A app to help groups choose where they should eat. Uses a Rails backend and AngularJS frontend. Users can create events and restaurants then vote for their favorites.</p>
+    </div>
+  </div>
+
+  <div id="edu-portfolio" class="container-fluid text-center bg-grey">
+    <div class="container">
+      <h2>Educational exercises</h2>
+      <h4>Here are some of the apps I built while studying</h4>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="edu-thumbnail">
+            <img src="images/whats-for-dinner.png" alt="What's for Dinner?">
+            <p><strong>What's For Dinner?</strong></p>
+            <p>A app to help groups choose where they should eat. Uses a Rails backend and AngularJS frontend. Users can create events and restaurants then vote for their favorites.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="edu-thumbnail">
+            <img src="images/club-posts.png" alt="Club Posts">
+            <p><strong>Club Posts</strong></p>
+            <p>A simple forum app using Rails, JavaScript, and jQuery that lets students communicate with other club members. It uses OmniAuth and Devise for authentication.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="edu-thumbnail">
+            <img src="images/game-organizer.png" alt="Game Organizer">
+            <p><strong>Game Organizer</strong></p>
+            <p>A Ruby app using Sinatra that lets users organize their board game collection.</p>
+          </div>
         </div>
       </div>
-    <div class="col-sm-4">
-        <div class="thumbnail">
-          <a href="https://github.com/pickledyamsman/catcrownstore"><img src="images/cat_crown_store.png" alt="Cat Crown Store"></a>
-          <p><strong><a href="https://github.com/pickledyamsman/catcrownstore">Cat Crown Store</a></strong></p>
-          <p>An ecommerce site for purchasing cat flower crowns. Rails with redis and foundation frontend framework. Braintree used for payment authorization.</p>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="edu-thumbnail">
+            <img src="images/birth-year-album.png" alt="Birth Year Album Gem">
+            <p><strong>Birth Year Album</strong></p>
+            <p>A Ruby gem that accepts a birth year through a custome CLI and scrapes Wikipedia using Nokogiri to find the highest selling album for that year.</p>
+          </div>
         </div>
       </div>
-<!--       <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="images/whats-for-dinner.png" alt="What's for Dinner?">
-          <p><strong>What's For Dinner?</strong></p>
-          <p>sdghskagsag</p>
-        </div>
-      </div> -->
     </div>
   </div>
 
   <div id="contact" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
-    <div class="row">
-      <div class="col-sm-7">
-        <p>Contact me and I'll get back to you as soon as possible.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Athens, GA</p>
-        <p><span class="glyphicon glyphicon-phone"></span> <a href="tel:504-485-1985">504-485-1985</a></p>
-        <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:matthewcianciolo@gmail.com">matthewcianciolo@gmail.com</a></p> 
-        <a href="https://github.com/pickledyamsman" title="Github"><button class="btn btn-lg">Github</button></a>
-        <a href="https://www.linkedin.com/in/matthewcianciolo" title="LinkedIn"><button class="btn btn-lg">LinkedIn</button></a>
-        <a href="https://www.facebook.com/profile.php?id=5138003" title="Facebook"><button class="btn btn-lg">Facebook</button></a>
-        <br><br>
-      </div>
-      <div class="col-sm-5">
-        <!-- Set height and width with CSS -->
-        <div id="googleMap" style="height:400px;width:100%;"></div>
+    <div class="container">
+      <h2 class="text-center">CONTACT</h2>
+      <div class="row">
+        <div class="col-sm-7">
+          <h3>Contact me and I'll get back to you as soon as possible.</h3>
+          <h4><span class="glyphicon glyphicon-map-marker"></span> Athens, GA</h4>
+          <h4><span class="glyphicon glyphicon-phone"></span> <a class="contact-link" href="tel:504-485-1985">504-485-1985</a></h4>
+          <h4><span class="glyphicon glyphicon-envelope"></span> <a class="contact-link" href="mailto:matthewcianciolo@gmail.com">matthewcianciolo@gmail.com</a></h4> 
+        </div>
+        <div class="col-sm-5">
+          <!-- Set height and width with CSS -->
+          <div id="googleMap" style="height:400px;width:100%;"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -204,7 +238,7 @@
     <a href="#myPage" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>&copy; 2016 Matthew Cianciolo. All Rights Reserved.</p> 
+    <p>&copy; 2018 Matthew Cianciolo. All Rights Reserved.</p> 
   </footer>
 
   <script>
